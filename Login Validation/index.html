@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<style>
+                    body{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                    }
+                    #form-container{
+                                        background-color:cornflowerblue;
+                                        padding: 50px;
+                                        margin: 50px;
+                                        text-align: center;
+                                        display: flex;
+                                        flex-direction: column;
+                    }
+                    h2{
+                                        font-size: 30px;
+                                        text-align: center;
+                                        text-decoration: underline;
+                                        font-weight: 600;
+                                        margin: 0px 0px 10px 0px;
+                    }
+                    input{
+                                        width: 250px;
+                                        margin: 15px 0px;
+                                        padding: 10px;
+                                        font-size: 18px;
+                    }
+                    #btn{
+                                        width: 100px;
+                                        height: 35px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content:center;
+                                        margin: 15px 0px;
+                                        
+                    }
+                    #formelm{
+                                        display: flex;
+                                        flex-direction: column;
+                    }
+                    .btn-div{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                    }
+                    p{
+                                        color: red;
+                                        margin: 0px;
+                                        text-align: left;
+                    }
+                   #color{
+                                        background-color: chartreuse;
+                                        width: 100%;
+                    }
+</style>
+<body>
+                    <div id="form-container">
+                                        <h2>Login</h2>
+                                        <form id="formelm" action="" onsubmit="return validate()">
+                    
+                                        <input type="text" placeholder="Username" id="username">
+                                        <p id="nameError"></p>
+                                        <input type="password" placeholder="Password" id="password">
+                                        <p id="passError"></p>
+                                        <input id="color" type="submit" >
+                                        </form>
+                    </div>
+                    <script src="script.js"></script>
+</body>
+</html>

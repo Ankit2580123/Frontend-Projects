@@ -1,0 +1,107 @@
+body{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100vh;
+}
+h2{
+                    font-size: 30px;
+                    font-weight: 400px;
+                    text-decoration: underline;
+                    bottom: 0;
+}
+#heading{
+                    color: darkcyan;
+}
+.container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    background-color:darkslategray;
+                    height: 320px;
+                    border: 2px solid black;
+                    padding: 15px;
+                    color: whitesmoke;
+}
+
+.digit{
+                    font-size: 80px;
+                    font-weight: bold;
+                    padding: 12px 5px;
+                    margin: 12px 10px;
+                     
+                   
+}
+.text{
+                    margin-left: -15px;
+                    font-size: 40px;
+                    font-weight: 500;
+                    padding-left: 0px;
+                    
+
+}
+.btn-container{
+                    text-align: center;
+                    margin-top: 20px;
+}
+#start{
+                    margin: 10px;
+                    height: 45px;
+                    width: 90px;
+                    cursor: pointer;
+                    background-color: rgb(5, 226, 5);
+                    font-size: 20px;
+                    border-radius: 4px;
+                    color: whitesmoke;
+                    font-weight: 500;
+}
+#stop{
+                    margin: 10px;
+                    height: 45px;
+                    width: 90px;
+                    cursor: pointer;
+                    background-color: rgb(230, 26, 26);
+                    font-size: 20px;
+                    border-radius: 4px;
+                    color: whitesmoke;
+                    font-weight: 500;
+                    
+}
+#reset{
+                    margin: 10px;
+                    height: 45px;
+                    width: 90px;
+                    cursor: pointer;
+                    background-color: rgb(14, 170, 217);
+                    font-size: 20px;
+                    border-radius: 4px;
+                    color: whitesmoke;
+                    font-weight: 500;
+}
+@media (max-width:506px){
+                    .container{
+                                        width: 90%;
+                                        
+                    }
+                    .text{
+                                        font-size: 35px;
+                    } 
+                    .digit{
+                                        font-size: 50px;
+                    }
+}
+  @media (max-width:419px){
+                    .container{
+                                        width: 90%;
+                                        
+                    } 
+                    .text{
+                                        font-size: 33px;
+                    }
+                    .digit{
+                                        font-size: 48px;
+                    }
+}  
