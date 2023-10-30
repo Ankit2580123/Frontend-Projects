@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Toast Notification</title>
+                    <link rel="stylesheet" href="style.css">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+                    <div class="btn">
+                                        <button id="success" onclick="showNotification(successMsg)">Success</button>
+                                        <button id="error" onclick="showNotification(errorMsg)">Error</button>
+                                        <button id="invalid" onclick="showNotification(invalidMsg)">Invalid</button>
+                    </div>
+
+                    <div id="toastBox">
+
+                    </div>
+                    <script>
+                                        let toastBox=document.getElementById('toastBox');
+                                        let successMsg='<i class="fa-solid fa-circle-check"></i>  Successfully Submitted';
+                                        let errorMsg='<i class="fa-solid fa-circle-xmark"></i> Please Fix the error!';
+                                        let invalidMsg='<i class="fa-solid fa-exclamation"></i> Invalid Input, Please Check';
+                    function showNotification(msg){
+                                         const Toastdiv=document.createElement('div');
+                                         Toastdiv.classList.add('toast');
+                                         Toastdiv.innerHTML=msg;
+                                         toastBox.appendChild(Toastdiv);
+                                        
+                                         if(msg.includes('error!')){
+                                                            Toastdiv.classList.add('error');
+                                         }
+                                         if(msg.includes('Invalid')){
+                                                            Toastdiv.classList.add('invalid');
+                                         }
+                                         setTimeout(()=>{
+                                                            Toastdiv.remove();
+                                         },3000);
+                    }
+                    </script>    
+</body>
+</html>
