@@ -1,0 +1,94 @@
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+                    background-color: rgb(73, 138, 164);
+}
+.quotesBox{
+                    width: 700px;
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    align-items: center;
+                    transform: translate(-50%, -50%);
+                    padding: 40px;
+                    border-radius: 10px;
+                    background: #fff;
+                    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.quotesBox h1{
+                    margin-bottom: 38px;
+                    font-size: 32px;
+                    position: relative;
+}
+.quotesBox h1::after{
+                    content: '';
+                    width: 95px;
+                    height: 3px;
+                    border-radius: 3px;
+                    background:rgb(23,124,229);
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+}
+.quotesBox blockquote{
+                    min-height: 110px;
+                    font-size: 25px
+}
+.quotesBox blockquote::before,.quotesBox blockquote::after{
+                    content: '"';
+}
+.quotesBox span{
+                    position: relative;
+                    float: right;
+                    margin-top: 10px;
+                    display: inline;
+}
+.quotesBox span::before{
+                    content: '';
+                    width: 18px;
+                    height: 2px;
+                    background-color: rgb(23,124,229);
+                    position: absolute;
+                    top: 50%;
+                    left: -25px;
+}
+.quotesBox .quotesBtn{
+                    margin-top: 50px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+}
+.quotesBox .quotesBtn button{
+                    background: rgb(23,124,229);
+                    border: 1px solid rgb(23,124,229);
+                    border-radius: 25px;
+                    cursor: pointer;
+                    width: 150px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 5px;
+                    color: #fff;
+                    position: relative;
+
+}
+.quotesBox .quotesBtn button img{
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    left: 0;
+                    margin-left: 15px;
+                    border-radius: 50%;
+                    background: transparent;
+}
+.quotesBox .quotesBtn button:nth-child(2){
+                    background: transparent;
+                    color: #333;
+}
